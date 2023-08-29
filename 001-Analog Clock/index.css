@@ -1,0 +1,42 @@
+.mainDiv {
+  margin: auto;
+  height: 500px;
+  width: 500px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock-face {
+  width: 500px;
+  height: 500px;
+}
+
+.second-hand {
+  position: absolute;
+  bottom: 250px;
+  left: 248px;
+  width: 4px;
+  height: 170px;
+}
+
+.minute-hand {
+  position: absolute;
+  bottom: 250px;
+  left: 248px;
+  width: 4px;
+  height: 200px;
+}
+
+.hour-hand {
+  position: absolute;
+  bottom: 250px;
+  left: 248px;
+  width: 4px;
+  height: 120px;
+}

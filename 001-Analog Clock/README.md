@@ -1,6 +1,7 @@
 # Analog Clock
 
-- analog clock developed using HTML/CSS/JS
+- Analog clock developed using HTML/CSS/JS
+- Check the demo : https://nimachamika.github.io/02-Web/002-AnalogClock/index.html
 
 ## References :
 

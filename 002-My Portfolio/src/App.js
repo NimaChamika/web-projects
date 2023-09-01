@@ -1,17 +1,27 @@
 import { useRef } from "react";
 import Home from "./pages/1-Home";
 import About from "./pages/2-About";
+import Experience from "./pages/3-Experience";
+import Projects from "./pages/4-Projects";
+import Contact from "./pages/5-Contact";
 
 function App() {
-  const aboutefElement = useRef(null);
-  const experienceRefElement = useRef(null);
-  const projectsRefElement = useRef(null);
-  const contactmyRefElement = useRef(null);
+  const refElementObj = {
+    aboutRefElement: null,
+    experienceRefElement: null,
+    projectsRefElement: null,
+    contactRefElement: null,
+  };
+
+  const refElements = useRef(refElementObj);
 
   return (
     <>
-      <Home aboutRefElement={aboutefElement} />
-      <About relElement={aboutefElement} />
+      <Home refElements={refElements} />
+      <About relElement={refElements} />
+      <Experience relElement={refElements} />
+      <Projects relElement={refElements} />
+      <Contact relElement={refElements} />
     </>
   );
 }

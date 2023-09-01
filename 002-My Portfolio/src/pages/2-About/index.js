@@ -3,7 +3,7 @@ import React from "react";
 
 const About = ({ relElement }) => {
   let Header = (
-    <Box sx={{ height: "15vh", width: "100%", display: "flex", justifyContent: "center", alignItems: "center" }}>
+    <Box sx={{ height: "20vh", width: "100%", display: "flex", justifyContent: "center", alignItems: "center" }}>
       <Box sx={{ display: { xs: "flex", md: "none" } }}>
         <Typography sx={{ fontFamily: "Poppins", fontSize: "6vw", color: "rgb(0,0,0)", fontWeight: 600 }}>About Me</Typography>
       </Box>

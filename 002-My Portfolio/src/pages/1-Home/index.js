@@ -6,7 +6,7 @@ const Home = ({ refElements }) => {
 
   const navBarLst = [
     { name: "About", refElement: refElements.current.aboutRefElement },
-    { name: "Experience", refElement: refElements.current.experienceRefElement },
+    { name: "Skills", refElement: refElements.current.skillsRefElement },
     { name: "Projects", refElement: refElements.current.projectsRefElement },
     { name: "Contact", refElement: refElements.current.contactRefElement },
   ];
@@ -27,7 +27,7 @@ const Home = ({ refElements }) => {
                   key={index}
                   onClick={() => {
                     console.log(item.refElement);
-                    refElements.current.aboutRefElement.scrollIntoView({ behavior: "smooth" });
+                    item.refElement.scrollIntoView({ behavior: "smooth" });
                   }}
                   sx={{
                     cursor: "pointer",

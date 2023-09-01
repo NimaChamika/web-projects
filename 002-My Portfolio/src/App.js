@@ -1,14 +1,14 @@
 import { useRef } from "react";
 import Home from "./pages/1-Home";
 import About from "./pages/2-About";
-import Experience from "./pages/3-Experience";
+import Skills from "./pages/3-Skills";
 import Projects from "./pages/4-Projects";
 import Contact from "./pages/5-Contact";
 
 function App() {
   const refElementObj = {
     aboutRefElement: null,
-    experienceRefElement: null,
+    skillsRefElement: null,
     projectsRefElement: null,
     contactRefElement: null,
   };
@@ -19,7 +19,7 @@ function App() {
     <>
       <Home refElements={refElements} />
       <About relElement={refElements} />
-      <Experience relElement={refElements} />
+      <Skills relElement={refElements} />
       <Projects relElement={refElements} />
       <Contact relElement={refElements} />
     </>

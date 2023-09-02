@@ -7,7 +7,7 @@ const Home = ({ refElements }) => {
   const navBarLst = [
     { name: "About", label: "aboutRefElement" },
     { name: "Skills", label: "skillsRefElement" },
-    { name: "Projects", label: "projectsRefElement" },
+    // { name: "Projects", label: "projectsRefElement" },
     { name: "Contact", label: "contactRefElement" },
   ];
 

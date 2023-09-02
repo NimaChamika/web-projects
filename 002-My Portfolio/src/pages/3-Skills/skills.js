@@ -1,7 +1,5 @@
-import styled from "@emotion/styled";
-import { Box, Container, Grid, Paper, Typography } from "@mui/material";
 import React from "react";
-import "./index.css";
+import "./skills.css";
 
 const Skills = ({ relElement }) => {
   //#region HEADER
@@ -14,6 +12,7 @@ const Skills = ({ relElement }) => {
   );
   //#endregion
 
+  //#region  CONTENT
   const skillLst = ["Frontend Development", " Game Development", " Mobile Development"];
 
   const techLst = [
@@ -32,13 +31,17 @@ const Skills = ({ relElement }) => {
       <div className="content-inner-container">
         <div className="all-skill-container">
           {skillLst.map((item, index) => {
-            return <div className="skill-container">{item}</div>;
+            return (
+              <div key={index} className="skill-container">
+                {item}
+              </div>
+            );
           })}
         </div>
         <div className="all-tech-container">
           {techLst.map((item, index) => {
             return (
-              <div className="tech-container">
+              <div key={index} className="tech-container">
                 <img src={item} alt="logo" />
               </div>
             );
@@ -48,11 +51,13 @@ const Skills = ({ relElement }) => {
     </div>
   );
 
+  //#endregion
+
   return (
-    <>
+    <div ref={(element) => (relElement.current.skillsRefElement = element)}>
       {header}
       {content}
-    </>
+    </div>
   );
 };
 

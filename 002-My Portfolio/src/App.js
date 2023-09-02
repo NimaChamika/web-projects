@@ -1,9 +1,10 @@
 import { useRef } from "react";
-import Home from "./pages/1-Home";
-import About from "./pages/2-About";
-import Skills from "./pages/3-Skills";
+
+import About from "./pages/2-About/about";
+import Skills from "./pages/3-Skills/skills";
 import Projects from "./pages/4-Projects";
-import Contact from "./pages/5-Contact";
+import Contact from "./pages/5-Contact/contact";
+import Home from "./pages/1-Home/home";
 
 function App() {
   const refElementObj = {
@@ -20,7 +21,7 @@ function App() {
       <Home refElements={refElements} />
       <About relElement={refElements} />
       <Skills relElement={refElements} />
-      <Projects relElement={refElements} />
+      {/* <Projects relElement={refElements} /> */}
       <Contact relElement={refElements} />
     </>
   );

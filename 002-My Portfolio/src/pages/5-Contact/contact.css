@@ -13,8 +13,12 @@
   text-align: center;
   font-weight: 500;
   border: 1px solid black;
-
+  cursor: pointer;
   border-radius: 20px;
+}
+
+.contact-container:hover {
+  background-color: rgba(161, 161, 161, 0.15);
 }
 
 .contact-container img {
@@ -22,13 +26,8 @@
 }
 
 .contact-container p {
-  font-size: 25px;
-  cursor: pointer;
   border-radius: 10px;
-}
-
-.contact-container p:hover {
-  background-color: rgba(161, 161, 161, 0.15);
+  padding: 2px 10px;
 }
 
 .footer-container {
@@ -50,7 +49,7 @@
   }
 
   .contact-container p {
-    font-size: 17px;
+    font-size: 4vw;
   }
 
   .footer-container p {

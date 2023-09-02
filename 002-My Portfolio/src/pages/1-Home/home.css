@@ -21,11 +21,29 @@
   flex-shrink: 0;
 }
 
+.home-navbar-container button {
+  cursor: pointer;
+  color: black;
+  margin: 0;
+  background-color: white;
+  border: none;
+}
+
+.home-navbar-container button:hover {
+  background-color: rgba(179, 178, 178, 0.2);
+}
+
+.home-navbar-container button p {
+  font-size: 25px;
+  padding: 5px 10px;
+}
+
 .home-hamburger-menu-container {
   display: none;
 }
 
 .home-hamburger-menu-container img {
+  display: none;
   width: 60px;
 }
 

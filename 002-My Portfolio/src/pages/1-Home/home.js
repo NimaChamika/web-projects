@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./home.css";
 
 const Home = ({ refElements }) => {
@@ -7,7 +7,7 @@ const Home = ({ refElements }) => {
   const navBarLst = [
     { name: "About", label: "aboutRefElement" },
     { name: "Skills", label: "skillsRefElement" },
-    // { name: "Projects", label: "projectsRefElement" },
+    { name: "Projects", label: "projectsRefElement" },
     { name: "Contact", label: "contactRefElement" },
   ];
 
@@ -22,18 +22,12 @@ const Home = ({ refElements }) => {
           {navBarLst.map((item, index) => {
             return (
               <button
-                variant="text"
                 key={index}
                 onClick={() => {
                   refElements.current[item.label].scrollIntoView({ behavior: "smooth" });
                 }}
-                sx={{
-                  cursor: "pointer",
-                  color: "black",
-                  margin: 0,
-                }}
               >
-                <p style={{ fontFamily: "Poppins,Arial", fontSize: "26px", margin: "5px" }}>{item.name}</p>
+                <p>{item.name}</p>
               </button>
             );
           })}
@@ -48,7 +42,7 @@ const Home = ({ refElements }) => {
 
   //#endregion
 
-  //#region
+  //#region CONTENT
 
   const githubLink = "https://github.com/NimaChamika";
   const linkedinLink = "https://www.linkedin.com/in/nirmalchamika/";

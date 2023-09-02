@@ -1,4 +1,3 @@
-import { Box } from "@mui/material";
 import React from "react";
 import "./contact.css";
 
@@ -15,13 +14,30 @@ const Contact = ({ relElement }) => {
 
   //#region  CONTENT
 
+  const linkedinLink = "https://www.linkedin.com/in/nirmalchamika/";
+
+  const openLink = (link) => {
+    window.open(link, "_blank");
+  };
+
+  const mailAddress = "lynchamika@gmail.com";
+
+  const openMail = () => {
+    window.location.href = `mailto:${mailAddress}`;
+  };
+
   let content = (
     <div className="contact-outer-container">
-      <div className="contact-container">
+      <div className="contact-container" onClick={openMail}>
         <img src="assets/email.png" alt="logo" />
-        <p>lynchamika@gmail.com</p>
+        <p>{mailAddress}</p>
       </div>
-      <div className="contact-container">
+      <div
+        className="contact-container"
+        onClick={() => {
+          openLink(linkedinLink);
+        }}
+      >
         <img src="assets/linkedin.png" alt="logo" />
         <p>LinkedIn</p>
       </div>
